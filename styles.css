@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    
+}
+
+#gallery {
+    width: 800px;
+    background-color: #ffffff;
+    padding: 80px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 10px 10px #41383896;
+}
+
+#photo-viewer img {
+    max-width: 100%;
+}
+
+
+
+/* Adjust styles for arrows, gray container, and other components */
+
+
+#right-arrow, #left-arrow {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%; /* This positions the arrow to the middle of its parent (the gallery div). */
+    transform: translateY(-50%); /* This ensures the exact centering of the arrow vertically. */
+    background-color:#ffffff;
+    color: rgba(77, 27, 27, 0);
+    border: none;
+    padding: 10px;
+    
+}
+#right-arrow:hover, #left-arrow:hover {
+    
+}
+
+#right-arrow  {
+   right: 480px; 
+   
+}
+
+#left-arrow  {
+    left: 480px; 
+    
+}
+
+
+.thumbnail {
+    display: inline-block;
+    margin: 5px;
+    border: 0;
+    text-align: center;
+    
+}
+
+.thumbnail img {
+    width: 80px;
+    height:70px;
+    padding: 10px;
+    
+    box-shadow: 10px 10px 10px #ccc;
+    
+   
+}
+
+.thumbnail-title {
+    display: none;
+    text-align: center;
+    font-size: 0.8em;
+    
+    
+}
+
+.thumbnail:hover {
+    transform:scale(1.2);
+   
+}
+
+
+.thumbnail.active {
+    border: 0 solid 5px rgb(0, 0, 0);
+
+    
+}
+#photo-description-wrapper {
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    padding: 10px;
+    display: none;
+    width: 100%; 
+}
+
+#photo:hover + #photo-description-wrapper,
+#photo-description-wrapper:hover { 
+    display: block; 
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(139, 139, 139);
+    
+}
+
+.wild {
+   
+    text-align: center;
+    color: rgb(183, 91, 15);
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
